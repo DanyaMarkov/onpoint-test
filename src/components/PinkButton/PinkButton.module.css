@@ -1,0 +1,27 @@
+.button {
+  background-color: palevioletred;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 30px;
+  border-radius: 70px;
+  float: right;
+  font-size: 50px;
+}
+
+.button__circle {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+.button__text {
+  font-size: 40px;
+}
+/*# sourceMappingURL=PinkButton.module.css.map */

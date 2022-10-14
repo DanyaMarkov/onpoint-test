@@ -1,0 +1,13 @@
+.footer {
+    // min-height: calc(100vh - 80px);
+    flex: 0 0 auto;
+
+
+    &__onpoint {
+        padding-bottom: 25px ;
+        padding-left: 100px;
+        img {
+            max-width: 60px;
+        }
+    }
+}

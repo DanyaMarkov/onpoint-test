@@ -1,0 +1,78 @@
+
+
+.homepage {
+    // width: 100%; 
+    // overflow: hidden;
+    img {
+        float: right;
+        max-width: 300px;
+        padding-top:15px;
+        // margin-left: 50px;
+    }
+    &__hello {
+        margin-top: 50px;
+        font-size: 40px;
+        font-family: Tahoma, Verdana,sans-serif; 
+    }
+
+    &__text {
+        font-size: 100px;
+        // font-family: Tahoma, sans-serif !important;         
+        font-weight: 100;
+        align-items: center;
+
+        letter-spacing: 8px; 
+        line-height: 1.15;
+
+    }
+}
+
+.sprites {
+    &__pink1 {
+        position: absolute;
+        z-index: 1;
+        top: 145px;
+        right: 0px;
+        img {
+            min-width: 600px;
+        }
+    }
+    &__bigBacteria {
+        position: absolute;
+        z-index: 1;
+        img {
+            width: 200px;
+        }
+        animation: bigBacteriaAnimation 9s infinite;
+    }
+}
+
+
+@keyframes bigBacteriaAnimation{
+    0%{
+        bottom: -60px;
+        right: 320px;
+        transform: scale(1);
+
+    }
+    25%{
+       transform: scale(1.2);
+
+    }
+    60% {
+        transform: scale(1);
+        bottom: -40px;
+        right: 340px;
+    }
+    75% {
+        transform: scale(1.2);
+        bottom: -60px;
+        right: 320px;
+
+    }
+    100% {
+        bottom: -60px;
+        right: 320px;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,15 @@
+.footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.footer__onpoint {
+  padding-bottom: 25px;
+  padding-left: 100px;
+}
+
+.footer__onpoint img {
+  max-width: 60px;
+}
+/*# sourceMappingURL=Footer.module.css.map */

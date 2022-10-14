@@ -1,0 +1,26 @@
+.header {
+  padding: 35px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__home {
+  margin-right: 25px;
+}
+
+.header__home img {
+  max-width: 30px;
+}
+
+.header__project img {
+  max-width: 140px;
+}
+/*# sourceMappingURL=Header.module.css.map */

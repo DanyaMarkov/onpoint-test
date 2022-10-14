@@ -1,0 +1,106 @@
+.homepage img {
+  float: right;
+  max-width: 300px;
+  padding-top: 15px;
+}
+
+.homepage__hello {
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: Tahoma, Verdana,sans-serif;
+}
+
+.homepage__text {
+  font-size: 100px;
+  font-weight: 100;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 8px;
+  line-height: 1.15;
+}
+
+.sprites__pink1 {
+  position: absolute;
+  z-index: 1;
+  top: 145px;
+  right: 0px;
+}
+
+.sprites__pink1 img {
+  min-width: 600px;
+}
+
+.sprites__bigBacteria {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: bigBacteriaAnimation 9s infinite;
+          animation: bigBacteriaAnimation 9s infinite;
+}
+
+.sprites__bigBacteria img {
+  width: 200px;
+}
+
+@-webkit-keyframes bigBacteriaAnimation {
+  0% {
+    bottom: -60px;
+    right: 320px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    bottom: -40px;
+    right: 340px;
+  }
+  75% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    bottom: -60px;
+    right: 320px;
+  }
+  100% {
+    bottom: -60px;
+    right: 320px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bigBacteriaAnimation {
+  0% {
+    bottom: -60px;
+    right: 320px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    bottom: -40px;
+    right: 340px;
+  }
+  75% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    bottom: -60px;
+    right: 320px;
+  }
+  100% {
+    bottom: -60px;
+    right: 320px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=Homepage.module.css.map */
