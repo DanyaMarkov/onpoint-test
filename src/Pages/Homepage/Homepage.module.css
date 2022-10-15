@@ -1,3 +1,10 @@
+.helppage {
+  position: relative;
+  left: -104px;
+  -webkit-transition: 32s;
+  transition: 32s;
+}
+
 .homepage img {
   float: right;
   max-width: 300px;

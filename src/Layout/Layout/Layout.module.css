@@ -1,6 +1,7 @@
 .body {
   background: url(../../assets/background/backgroundSprites.png);
   background-size: 100% 100%;
+  background-position: left;
   min-height: calc(100vh);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,5 +18,6 @@
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   padding: 0px 100px;
+  position: relative;
 }
 /*# sourceMappingURL=Layout.module.css.map */
