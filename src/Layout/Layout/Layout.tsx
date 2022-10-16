@@ -2,19 +2,15 @@ import css from "./Layout.module.css";
 
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-// import { Outlet } from "react-router-dom";
-// import { useState } from "react";
 import Homepage from "../../Pages/Homepage/Homepage";
 
 import { useState } from "react";
-// import { useRef } from "react";
 import Message from "../../Pages/Message/Message";
 import cn from "classnames";
 import KeyMessage from "../../Pages/KeyMessage/KeyMessage";
 
 const Layout = () => {
     //Проверка при свайпе
-
     let x1: any;
     let y1: any;
     const handleTouchStart = (e: any) => {
@@ -56,30 +52,18 @@ const Layout = () => {
         }
     };
 
-    // const body = <HTMLDivElement>(null)
-
-    // const body = useRef<HTMLDivElement>(null);
-
     const changePage = (numberOfPage: number) => {
         changePageNumber(numberOfPage);
-        // body.current.id = "1";
-        // body.current.style["background-image"] =
-        // body.current?.style.backgroundImage = url(../../assets/background/backgroundMessage.png);
     };
 
     return (
-        <div
-            // ref={body}
-            className={cn(css.body, currentPage === 1 ? css.back1 : currentPage === 2 ? css.back2 : css.back3)}
-        >
+        <div className={cn(css.body, currentPage === 1 ? css.back1 : currentPage === 2 ? css.back2 : css.back3)}>
             <Header changePage={changePage} />
 
             <main className={css.main} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
                 {currentPage === 1 ? <Homepage changePage={changePage} /> : null}
                 {currentPage === 2 ? <Message changePage={changePage} /> : null}
                 {currentPage === 3 ? <KeyMessage changePage={changePage} /> : null}
-                {/* {currentPage === 1 ? <Homepage changePage={changePage} /> : null} */}
-                {/* <Outlet currentPage={currentPage}/> */}
             </main>
 
             <Footer />

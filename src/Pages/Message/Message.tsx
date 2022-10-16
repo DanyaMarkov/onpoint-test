@@ -5,8 +5,6 @@ import cn from "classnames";
 
 const Message = (props: any) => {
     return (
-        // <div className={props.currentPage === 1 ? css.homepage : css.helppage}>
-
         <div className={css.message}>
             <div className={css.message__header}>
                 ТЕКСТ <br /> СООБЩЕНИЯ

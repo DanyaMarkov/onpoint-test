@@ -8,8 +8,6 @@ import calendar from "../../assets/sprites/calendar.png";
 
 const KeyMessage = (props: any) => {
     return (
-        // <div className={props.currentPage === 1 ? css.homepage : css.helppage}>
-
         <div className={css.keyMessage}>
             <div className={css.keyMessage__title}>
                 <h4>КЛЮЧЕВОЕ СООБЩЕНИЕ</h4>

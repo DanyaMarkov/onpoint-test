@@ -1,7 +1,6 @@
 import css from "./Homepage.module.css";
 
 import buttonNext from "../../assets/sprites/buttonNext.png";
-// import cn from "classnames";
 
 import pink1 from "../../assets/sprites/pink1.png";
 import bigBacteria from "../../assets/sprites/bigBacteria.png";
@@ -11,8 +10,6 @@ import tinyBacteria from "../../assets/sprites/tinyBacteria.png";
 
 const Homepage = (props: any) => {
     return (
-        // <div className={props.currentPage === 1 ? css.homepage : css.helppage}>
-
         <div className={css.homepage}>
             <div className={css.homepage__hello}>ПРИВЕТ,</div>
             <div className={css.homepage__text}>
