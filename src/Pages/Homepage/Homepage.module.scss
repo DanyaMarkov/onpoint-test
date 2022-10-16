@@ -1,17 +1,36 @@
 
-.helppage {
-    position: relative;
-    left: -104px;
-    transition: 32s;
-    // div {
-    //     // transition: 2s;
-    //     position: relative;
+// .helppage {
+//     position: relative;
+//     left: -104px;
+//     transition: 32s;
+//     // div {
+//     //     // transition: 2s;
+//     //     position: relative;
       
-    //     // left: -1024px;
-    //     animation: swipe 3s alternate ;
-    // }
+//     //     // left: -1024px;
+//     //     animation: swipe 3s alternate ;
+//     // }
 
 
+// }
+
+.appBody {
+    position: relative;
+    flex-direction: row;
+    &__homepage {
+        width: 1024px;
+        min-height: 100%;
+        transition: 1s;
+    }
+    overflow: hidden;
+}
+.appBodyTrack {
+    // min-height: 100%;
+    // min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 3px solid black
+   
 }
 
 // @keyframes swipe{
@@ -38,6 +57,8 @@
 .homepage {
     // width: 100%; 
     // overflow: hidden;
+    min-height: 100%;
+    min-width: 100%;
     img {
         float: right;
         max-width: 300px;

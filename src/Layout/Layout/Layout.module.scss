@@ -25,10 +25,66 @@
     height: 100%;
 }
 
+// .body:hover {
+//     background-position-x: -100px;
+// }
+
 .main {
     flex: 1 0 auto;
     padding: 0px 100px;
 
 
-    position: relative;
+    // position: relative;
+}
+
+
+
+.sprites {
+    &__pink1 {
+        position: absolute;
+        z-index: 1;
+        top: 148px;
+        right: 0px;
+        img {
+            max-width: 600px;
+        }
+    }
+    &__bigBacteria {
+        position: absolute;
+        z-index: 1;
+        img {
+            width: 200px;
+        }
+        animation: bigBacteriaAnimation 9s infinite;
+    }
+}
+
+
+@keyframes bigBacteriaAnimation{
+    0%{
+        bottom: -60px;
+        right: 320px;
+        transform: scale(1);
+
+    }
+    25%{
+       transform: scale(1.2);
+
+    }
+    60% {
+        transform: scale(1);
+        bottom: -40px;
+        right: 340px;
+    }
+    75% {
+        transform: scale(1.2);
+        bottom: -60px;
+        right: 320px;
+
+    }
+    100% {
+        bottom: -60px;
+        right: 320px;
+        transform: scale(1);
+    }
 }

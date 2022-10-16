@@ -1,8 +1,33 @@
-.helppage {
+.appBody {
   position: relative;
-  left: -104px;
-  -webkit-transition: 32s;
-  transition: 32s;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+}
+
+.appBody__homepage {
+  width: 1024px;
+  min-height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.appBodyTrack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 3px solid black;
+}
+
+.homepage {
+  min-height: 100%;
+  min-width: 100%;
 }
 
 .homepage img {
