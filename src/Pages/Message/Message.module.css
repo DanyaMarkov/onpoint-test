@@ -1,0 +1,103 @@
+.message__header {
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: Tahoma, Verdana,sans-serif;
+}
+
+.message__text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.text {
+  display: -ms-grid;
+  display: grid;
+  direction: rtl;
+}
+
+.text__content {
+  margin-top: 30px;
+  padding: 10px 30px;
+  overflow-y: auto;
+  max-height: 350px;
+}
+
+.text__content p {
+  padding: 30px;
+  margin: 0px;
+  background-color: white;
+  border-radius: 30px;
+  -webkit-box-shadow: -5px -5px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: -5px -5px 8px 0px rgba(34, 60, 80, 0.2);
+  font-size: 26px;
+  text-align: left;
+}
+
+.text__content::-webkit-scrollbar {
+  width: 25px;
+  direction: ltr;
+  margin-right: 30px;
+  padding-right: 50px;
+  left: 10px;
+  background-image: url(../../assets/sprites/scroll.png);
+  background-size: 100% 100%;
+}
+
+.text__content::-webkit-scrollbar-thumb {
+  background-image: url(../../assets/sprites/scrollBar.png);
+  background-size: 100% 100%;
+  margin: 100px;
+}
+
+.sprites__pink1 {
+  position: absolute;
+  z-index: 1;
+  top: 145px;
+  right: 0px;
+}
+
+.sprites__pink1 img {
+  min-width: 600px;
+}
+
+.sprites__bigBacteria {
+  position: absolute;
+  z-index: 1;
+  -webkit-animation: bigBacteriaAnimation 9s infinite linear;
+          animation: bigBacteriaAnimation 9s infinite linear;
+}
+
+.sprites__bigBacteria img {
+  width: 200px;
+}
+
+@-webkit-keyframes smallBacteriaAnimation {
+  0% {
+    top: 500px;
+    left: 75px;
+  }
+  50% {
+    top: 560px;
+    left: 100px;
+  }
+  100% {
+    top: 500px;
+    left: 75px;
+  }
+}
+
+@keyframes smallBacteriaAnimation {
+  0% {
+    top: 500px;
+    left: 75px;
+  }
+  50% {
+    top: 560px;
+    left: 100px;
+  }
+  100% {
+    top: 500px;
+    left: 75px;
+  }
+}
+/*# sourceMappingURL=Message.module.css.map */

@@ -1,64 +1,7 @@
 
-// .helppage {
-//     position: relative;
-//     left: -104px;
-//     transition: 32s;
-//     // div {
-//     //     // transition: 2s;
-//     //     position: relative;
-      
-//     //     // left: -1024px;
-//     //     animation: swipe 3s alternate ;
-//     // }
-
-
-// }
-
-.appBody {
-    position: relative;
-    flex-direction: row;
-    &__homepage {
-        width: 1024px;
-        min-height: 100%;
-        transition: 1s;
-    }
-    overflow: hidden;
-}
-.appBodyTrack {
-    // min-height: 100%;
-    // min-width: 100%;
-    display: flex;
-    flex-direction: row;
-    border: 3px solid black
-   
-}
-
-// @keyframes swipe{
-//     from{
-//         // position: absolute;
-//         // bottom: -60px;
-//         // right: 320px;
-//         // transform: scale(1);
-//     }
-//     to{
-//         // position: absolute;
-//         // translateX:(-100%) ;
-//         left: -10241px;
-//     }
-// }
-
-// .homepage:hover {
-//     position: relative;
-//     left: -1024px;
-
-//     transition: 10s all ease;
-// }
-
 .homepage {
-    // width: 100%; 
-    // overflow: hidden;
-    min-height: 100%;
-    min-width: 100%;
+    z-index: 2;
+    // position: ;
     img {
         float: right;
         max-width: 300px;
@@ -80,6 +23,9 @@
         letter-spacing: 8px; 
         line-height: 1.15;
 
+        z-index: 2;
+
+
     }
 }
 
@@ -90,7 +36,7 @@
         top: 145px;
         right: 0px;
         img {
-            min-width: 600px;
+            min-width: 570px;
         }
     }
     &__bigBacteria {
@@ -99,14 +45,40 @@
         img {
             width: 200px;
         }
-        animation: bigBacteriaAnimation 9s infinite;
+        animation: bigBacteriaAnimation 9s infinite linear;
+    }
+    &__smallBacteria {
+        position: absolute;
+        z-index: 1;
+        img {
+            width: 70px;
+        }
+        animation: smallBacteriaAnimation 5s infinite linear;
+    }
+    &__tinyBacteria {
+        position: absolute;
+        z-index: 1;
+        img {
+            width: 70px;
+        }
+        animation: tinyBacteriaAnimation 9s infinite linear;
+    }
+    &__spikyBacteria {
+        position: absolute;
+        z-index: 3;
+        img {
+            width: 110px;
+        }
+
+        animation: spikyBacteriaAnimation 8s infinite linear;
+        // transform-origin: -80px -80px;
+
     }
 }
 
-
 @keyframes bigBacteriaAnimation{
     0%{
-        bottom: -60px;
+        bottom: -90px;
         right: 320px;
         transform: scale(1);
 
@@ -117,18 +89,78 @@
     }
     60% {
         transform: scale(1);
-        bottom: -40px;
+        bottom: -70px;
         right: 340px;
     }
     75% {
         transform: scale(1.2);
-        bottom: -60px;
+        bottom: -90px;
         right: 320px;
 
     }
     100% {
-        bottom: -60px;
+        bottom: -90px;
         right: 320px;
         transform: scale(1);
+    }
+}
+
+@keyframes tinyBacteriaAnimation{
+    0%{
+        top: 500px;
+        left: 75px;
+    }
+    50% {
+        top: 560px;
+        left: 100px;
+    }
+    100% {
+        top: 500px;
+        left: 75px;
+    }
+}
+@keyframes smallBacteriaAnimation{
+    0%{
+        top: 80px;
+        right: 230px;
+    }
+    50% {
+        top: 80px;
+        right: 200px;
+    }
+    100% {
+        top: 80px;
+        right: 230px;
+    }
+}
+
+@keyframes spikyBacteriaAnimation{
+    // 100% {transform: rotate(-30deg);}
+
+    0%{
+        top: 120px;
+        right: 120px;
+
+    }
+    25%{
+        top: 105px;
+        right: 135px;
+        rotate: (-10deg);
+
+    }
+    50% {
+        top: 90px;
+        right: 150px;
+        rotate: (-30deg);
+
+    }
+    75% {
+        top: 105px;
+        right: 135px;
+        
+    }
+    100% {
+        top: 120px;
+        right: 120px;
     }
 }

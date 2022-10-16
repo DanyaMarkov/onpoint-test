@@ -1,0 +1,93 @@
+
+.message {
+    &__header{
+        margin-top: 50px;
+        font-size: 40px;
+        font-family: Tahoma, Verdana,sans-serif; 
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+.text {
+    display: grid;
+    // grid-template-columns: 10% 90%;
+    direction:rtl;
+
+    &__content{
+        margin-top: 30px;
+        padding: 10px 30px;
+        overflow-y: auto;
+        max-height: 350px;
+
+        p {
+                padding: 30px;
+                margin: 0px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 30px;
+                -webkit-box-shadow: -5px -5px 8px 0px rgba(34, 60, 80, 0.2);
+                -moz-box-shadow: -5px -5px 8px 0px rgba(34, 60, 80, 0.2);
+                box-shadow: -5px -5px 8px 0px rgba(34, 60, 80, 0.2);
+                font-size: 26px;
+                text-align: left;
+                
+        }
+
+    }
+
+    &__content::-webkit-scrollbar {
+        width: 25px;
+
+        direction:ltr;
+        margin-right: 30px;
+        padding-right: 50px;
+        left: 10px;
+        background-image: url(../../assets/sprites/scroll.png);
+        background-size: 100% 100%;
+    }
+    &__content::-webkit-scrollbar-thumb {
+        background-image: url(../../assets/sprites/scrollBar.png);
+        background-size: 100% 100%;
+        margin: 100px;
+    }
+
+      
+
+}
+
+.sprites {
+    &__pink1 {
+        position: absolute;
+        z-index: 1;
+        top: 145px;
+        right: 0px;
+        img {
+            min-width: 600px;
+        }
+    }
+    &__bigBacteria {
+        position: absolute;
+        z-index: 1;
+        img {
+            width: 200px;
+        }
+        animation: bigBacteriaAnimation 9s infinite linear;
+    }
+}
+@keyframes smallBacteriaAnimation{
+    0%{
+        top: 500px;
+        left: 75px;
+    }
+    50% {
+        top: 560px;
+        left: 100px;
+    }
+    100% {
+        top: 500px;
+        left: 75px;
+    }
+}

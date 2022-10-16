@@ -1,7 +1,7 @@
 .footer {
     // min-height: calc(100vh - 80px);
     flex: 0 0 auto;
-
+    z-index: 4;
 
     &__onpoint {
         padding-bottom: 25px ;

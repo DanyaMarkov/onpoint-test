@@ -1,90 +1,31 @@
 
-.body {
+.back1 {
     background: url(../../assets/background/backgroundSprites.png);
-    // background: url(../../assets/background/background.png);
+}
+.back2 {
+    background: url(../../assets/background/backgroundMessage.png);
+}
+.back3 {
+    background: url(../../assets/background/backgroundKeyMessage.png);
+}
 
+.body {
+    // background: url(../../assets/background/backgroundSprites.png);
 
-
-    // background-size: 100% 100%;
-    // background-position: center;
+    // background: url(../../assets/background/backgroundMessage.png);
 
     background-size: 100% 100%;
     background-position: left;
 
     min-height: calc(100vh);
 
-    // background-size: contain no-repeat;
-    // background-size: cover;
-    // background-size: calc(190vh);
-
-
-    // background-color: rgb(140, 119, 94);
-
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-// .body:hover {
-//     background-position-x: -100px;
-// }
 
 .main {
     flex: 1 0 auto;
     padding: 0px 100px;
-
-
-    // position: relative;
-}
-
-
-
-.sprites {
-    &__pink1 {
-        position: absolute;
-        z-index: 1;
-        top: 148px;
-        right: 0px;
-        img {
-            max-width: 600px;
-        }
-    }
-    &__bigBacteria {
-        position: absolute;
-        z-index: 1;
-        img {
-            width: 200px;
-        }
-        animation: bigBacteriaAnimation 9s infinite;
-    }
-}
-
-
-@keyframes bigBacteriaAnimation{
-    0%{
-        bottom: -60px;
-        right: 320px;
-        transform: scale(1);
-
-    }
-    25%{
-       transform: scale(1.2);
-
-    }
-    60% {
-        transform: scale(1);
-        bottom: -40px;
-        right: 340px;
-    }
-    75% {
-        transform: scale(1.2);
-        bottom: -60px;
-        right: 320px;
-
-    }
-    100% {
-        bottom: -60px;
-        right: 320px;
-        transform: scale(1);
-    }
 }

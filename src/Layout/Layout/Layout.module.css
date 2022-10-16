@@ -1,5 +1,16 @@
-.body {
+.back1 {
   background: url(../../assets/background/backgroundSprites.png);
+}
+
+.back2 {
+  background: url(../../assets/background/backgroundMessage.png);
+}
+
+.back3 {
+  background: url(../../assets/background/backgroundKeyMessage.png);
+}
+
+.body {
   background-size: 100% 100%;
   background-position: left;
   min-height: calc(100vh);
@@ -18,89 +29,5 @@
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   padding: 0px 100px;
-}
-
-.sprites__pink1 {
-  position: absolute;
-  z-index: 1;
-  top: 148px;
-  right: 0px;
-}
-
-.sprites__pink1 img {
-  max-width: 600px;
-}
-
-.sprites__bigBacteria {
-  position: absolute;
-  z-index: 1;
-  -webkit-animation: bigBacteriaAnimation 9s infinite;
-          animation: bigBacteriaAnimation 9s infinite;
-}
-
-.sprites__bigBacteria img {
-  width: 200px;
-}
-
-@-webkit-keyframes bigBacteriaAnimation {
-  0% {
-    bottom: -60px;
-    right: 320px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  25% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  60% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    bottom: -40px;
-    right: 340px;
-  }
-  75% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    bottom: -60px;
-    right: 320px;
-  }
-  100% {
-    bottom: -60px;
-    right: 320px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes bigBacteriaAnimation {
-  0% {
-    bottom: -60px;
-    right: 320px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  25% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  60% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    bottom: -40px;
-    right: 340px;
-  }
-  75% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    bottom: -60px;
-    right: 320px;
-  }
-  100% {
-    bottom: -60px;
-    right: 320px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
 }
 /*# sourceMappingURL=Layout.module.css.map */
