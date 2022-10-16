@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/onpoint-test/static/css/main.89fe1b35.css",
+    "main.js": "/onpoint-test/static/js/main.236abc76.js",
+    "static/js/787.def5c76a.chunk.js": "/onpoint-test/static/js/787.def5c76a.chunk.js",
+    "static/media/backgroundMessage.png": "/onpoint-test/static/media/backgroundMessage.4f9f8b984a6938f54f8f.png",
+    "static/media/backgroundKeyMessage.png": "/onpoint-test/static/media/backgroundKeyMessage.80a5d5624aa57a43eedd.png",
+    "static/media/backgroundSprites.png": "/onpoint-test/static/media/backgroundSprites.3fd1ab0600eff286375d.png",
+    "static/media/bottle.png": "/onpoint-test/static/media/bottle.d43cf1af65632fd4dfd4.png",
+    "static/media/bigBacteria.png": "/onpoint-test/static/media/bigBacteria.5e2f3d927d7f279a5932.png",
+    "static/media/spikyBacteria.png": "/onpoint-test/static/media/spikyBacteria.07a0083e9fb40219986c.png",
+    "static/media/tinyBacteria.png": "/onpoint-test/static/media/tinyBacteria.c2db4e59818955359768.png",
+    "static/media/smallBacteria.png": "/onpoint-test/static/media/smallBacteria.13808f6c53fc2dc92371.png",
+    "static/media/buttonNext.png": "/onpoint-test/static/media/buttonNext.4f5717a24f87e8cb5fc3.png",
+    "static/media/buttonInfo.png": "/onpoint-test/static/media/buttonInfo.227f205015c9103c025a.png",
+    "static/media/plate.png": "/onpoint-test/static/media/plate.6b79b8bb5ac7a9566bd9.png",
+    "static/media/calendar.png": "/onpoint-test/static/media/calendar.f5e5b28c3c03c5bc1c29.png",
+    "static/media/onpoint.png": "/onpoint-test/static/media/onpoint.05dac1b3de7a5a335b7c.png",
+    "static/media/scrollBar.png": "/onpoint-test/static/media/scrollBar.b7f1664f1d02f4f6b915.png",
+    "static/media/project.png": "/onpoint-test/static/media/project.29350352fc1e081aedec.png",
+    "static/media/scroll.png": "/onpoint-test/static/media/scroll.d8465396fc0b48b669e1.png",
+    "static/media/homeIcon.png": "/onpoint-test/static/media/homeIcon.8203f2369f4ca21e0eae.png",
+    "static/media/pink1.png": "/onpoint-test/static/media/pink1.0d3cc90289573465aacc.png",
+    "index.html": "/onpoint-test/index.html",
+    "main.89fe1b35.css.map": "/onpoint-test/static/css/main.89fe1b35.css.map",
+    "main.236abc76.js.map": "/onpoint-test/static/js/main.236abc76.js.map",
+    "787.def5c76a.chunk.js.map": "/onpoint-test/static/js/787.def5c76a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89fe1b35.css",
+    "static/js/main.236abc76.js"
+  ]
+}
